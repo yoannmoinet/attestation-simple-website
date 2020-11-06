@@ -1,0 +1,154 @@
+@import './global.css';
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    max-width: 1024px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* border: solid 1px var(--green); */
+    /* box-sizing: border-box; */
+    /* margin-bottom: -120px; */
+    margin-top: 20px;
+}
+
+.bottom {
+    /* padding-left: 30px;
+    width: 60%; */
+    /* outline: 1px solid pink; */
+    max-width: 800px;
+}
+
+.phones {
+    width: 60%;
+}
+
+.stores {
+    display: flex;
+    position: relative;
+    background: url(../assets/store-badges.svg) no-repeat;
+    width: 40%;
+}
+
+.phones img {
+    /* border: solid 1px var(--green); */
+    /* box-sizing: border-box; */
+    width: 160%;
+    margin-left: -30%;
+    margin-right: -30%;
+    /* width: calc(100% + 600px); */
+    /* margin-left: -400px; */
+    /* right: -200px; */
+    /* margin-bottom: -170px; */
+}
+
+.phones .uno {
+    width: 180%;
+    margin-left: -40%;
+    margin-right: -40%;
+    display: none;
+    margin-bottom: -54%;
+}
+
+.phones .duo {
+    width: 160%;
+    margin-left: -30%;
+    margin-right: -30%;
+    display: block;
+    margin-bottom: -48%;
+}
+
+.title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.subtitle {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.bottom p {
+    /* font-size: 16px; */
+}
+
+.footer {
+    /* position: fixed; */
+    /* bottom: 0; */
+    width: 100%;
+    text-align: center;
+    color: var(--grey);
+    opacity: 0.7;
+}
+
+.footer p {
+    font-size: 12px;
+}
+
+@media (max-width: 700px) {
+    .content {
+        padding: 0 20px;
+        overflow: hidden;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .right p {
+        font-size: 14px;
+    }
+
+    .left {
+        padding-right: 10px;
+        width: 40%;
+    }
+
+    .right {
+        padding-left: 10px;
+        width: 60%;
+    }
+
+    .phones img {
+        /* width: calc(100% + 600px);
+        margin-left: -350px;
+        margin-right: -100px;
+        margin-bottom: -170px; */
+    }
+
+    /* .phones .uno {
+        display: block;
+    }
+
+    .phones .duo {
+        display: none;
+    } */
+}

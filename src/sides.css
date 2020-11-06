@@ -1,0 +1,71 @@
+@import './global.css';
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    color: var(--grey);
+    opacity: 0.7;
+    margin-top: 100px;
+}
+
+.titles {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 50%;
+    text-decoration: none;
+}
+
+.title {
+    margin: 0;
+    position: relative;
+    margin-right: 30px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.titles h2.subtitle {
+    margin: 0;
+    font-weight: 500;
+    font-size: 35;
+}
+
+.stores {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    height: auto;
+    background: url(../assets/store-badges.svg) no-repeat;
+    width: 50%;
+    max-width: 500px;
+}
+
+p strong {
+    font-weight: 300;
+    font-size: 40px;
+}
+
+@media (max-width: 950px) {
+    .header {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .titles {
+        width: 100%;
+    }
+
+    .stores {
+        width: 100%;
+        margin-top: 50px;
+    }
+}
