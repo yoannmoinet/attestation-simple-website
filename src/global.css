@@ -72,3 +72,23 @@ p {
     font-weight: 300;
     margin: 5px 0;
 }
+
+.apple-popup {
+    position: absolute;
+    width: 50%;
+    background: #E1E6DA;
+    border-radius: 10px;
+    margin-left: -20px;
+    margin-top: -20px;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.apple-popup:hover, .apple-popup:active {
+    opacity: 100;
+}
+
+.apple-popup p {
+    font-size: 16px;
+}
